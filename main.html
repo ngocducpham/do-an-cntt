@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Book Store</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/font-awesome.css">
+        <link rel="stylesheet" href="./css/flickity.css">
+		<script src="./js/jquery-3.5.1.slim.min.js" defer></script>
+		<script src="./js/bootstrap.bundle.min.js" defer></script>
+        <script src="./js/jquery.min.js" defer></script>
+        <script src="./js/flickity.pkgd.js" defer></script>
+	</head>
+	<body class="bg-light text-dark">
+		<nav class="navbar navbar-expand-lg navbar-light pr-lg-5 pl-lg-5" 
+        style="background-color: #e3f2fd; min-height: 4rem;">
+			<a class="navbar-brand ml-2 mb-0 h1" href="#">BookStore</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0 ml-lg-2">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input class="form-control mr-sm-2 border-0 shadow-none" 
+                    type="search"
+                    placeholder="Tìm kiếm sách" 
+                    aria-label="Search"
+                    style="background-color: #e3f2fd;">
+                  </form>
+
+                  <ul class="navbar-nav ml-lg-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+                            <i class="far fa-user"></i>
+                            Tài khoản
+                        </a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+                            <i class="far fa-shopping-cart"></i>
+                            Giỏ hàng
+                        </a>
+					</li>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+        <div class="mr-lg-5 ml-lg-5">
+			<div class="slider bg-secondary mb-5" style="height: 300px;"></div>
+			<div class="d-flex mt-3 page-content">
+				<div class="book-aside" style="width: 30%;">
+					<div class="aside-title font-weight-bold mb-3">Có thể bạn sẽ thích</div>
+					<div class="aside-content d-flex mb-3">
+						<img src="./img/book-cover1.jpg" alt="" style="max-width: 60px;">
+						<div class="ml-2">
+							<div class="font-weight-bold mt-2">Disappearing Earth</div>
+							<div class="font-weight-light">by Julia Phillips</div>
+						</div>
+					</div>
+					<div class="aside-content d-flex mb-3">
+						<img src="./img/book-cover2.jpg" alt="" style="max-width: 60px;">
+						<div class="ml-2">
+							<div class="font-weight-bold mt-2">Disappearing Earth</div>
+							<div class="font-weight-light">by Julia Phillips</div>
+						</div>
+					</div>
+					<div class="aside-content d-flex mb-3">
+						<img src="./img/book-cover3.jpg" alt="" style="max-width: 60px;">
+						<div class="ml-2">
+							<div class="font-weight-bold mt-2">Disappearing Earth</div>
+							<div class="font-weight-light">by Julia Phillips</div>
+						</div>
+					</div>
+					<div class="aside-content d-flex mb-3">
+						<img src="./img/book-cover4.jpg" alt="" style="max-width: 60px;">
+						<div class="ml-2">
+							<div class="font-weight-bold mt-2">Disappearing Earth</div>
+							<div class="font-weight-light">by Julia Phillips</div>
+						</div>
+					</div>
+					<div class="aside-content d-flex mb-3">
+						<img src="./img/book-cover1.jpg" alt="" style="max-width: 60px;">
+						<div class="ml-2">
+							<div class="font-weight-bold mt-2">Disappearing Earth</div>
+							<div class="font-weight-light">by Julia Phillips</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="main-content" style="width: 70%;">
+					<ul class="nav justify-content-end border-bottom mb-4">
+						<div class="mr-auto font-weight-bold p-2">Sách phổ biến</div>
+						<li class="nav-item">
+						  <a class="nav-link active" href="#">Tất cả</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Trinh thám</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Lãng mạn</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kinh dị</a>
+						  </li>
+					  </ul>
+
+					  <div class="popular-book d-flex flex-wrap ml-3">
+						<div class="card mb-5 mr-5" style="max-width: 500px;">
+							<div class="row no-gutters">
+							  <div class="col-md-4">
+								<img src="./img/book-cover1.jpg" class="w-100">
+							  </div>
+							  <div class="col-md-8">
+								<div class="card-body">
+								  <h5 class="card-title">Card title</h5>
+								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							  </div>
+							</div>
+						  </div>
+						  
+						  <div class="card mb-5 mr-5" style="max-width: 500px;">
+							<div class="row no-gutters">
+							  <div class="col-md-4">
+								<img src="./img/book-cover2.jpg" class="w-100">
+							  </div>
+							  <div class="col-md-8">
+								<div class="card-body">
+								  <h5 class="card-title">Card title</h5>
+								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							  </div>
+							</div>
+						  </div>
+
+						  <div class="card mb-5 mr-5" style="max-width: 500px;">
+							<div class="row no-gutters">
+							  <div class="col-md-4">
+								<img src="./img/book-cover3.jpg" class="w-100">
+							  </div>
+							  <div class="col-md-8">
+								<div class="card-body">
+								  <h5 class="card-title">Card title</h5>
+								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							  </div>
+							</div>
+						  </div> 
+
+						  <div class="card mb-5 mr-5" style="max-width: 500px;">
+							<div class="row no-gutters">
+							  <div class="col-md-4">
+								<img src="./img/book-cover4.jpg" class="w-100">
+							  </div>
+							  <div class="col-md-8">
+								<div class="card-body">
+								  <h5 class="card-title">Card title</h5>
+								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							  </div>
+							</div>
+						  </div> 
+
+						  <div class="card mb-5 mr-5" style="max-width: 500px;">
+							<div class="row no-gutters">
+							  <div class="col-md-4">
+								<img src="./img/book-cover1.jpg" class="w-100">
+							  </div>
+							  <div class="col-md-8">
+								<div class="card-body">
+								  <h5 class="card-title">Card title</h5>
+								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							  </div>
+							</div>
+						  </div> 
+					  
+						  <div class="card mb-5 mr-5" style="max-width: 500px;">
+							<div class="row no-gutters">
+							  <div class="col-md-4">
+								<img src="./img/book-cover2.jpg" class="w-100">
+							  </div>
+							  <div class="col-md-8">
+								<div class="card-body">
+								  <h5 class="card-title">Card title</h5>
+								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							  </div>
+							</div>
+						  </div> 
+
+						  <div class="card mb-5 mr-5" style="max-width: 500px;">
+							<div class="row no-gutters">
+							  <div class="col-md-4">
+								<img src="./img/book-cover3.jpg" class="w-100">
+							  </div>
+							  <div class="col-md-8">
+								<div class="card-body">
+								  <h5 class="card-title">Card title</h5>
+								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							  </div>
+							</div>
+						  </div> 
+
+						  <div class="card mb-5 mr-5" style="max-width: 500px;">
+							<div class="row no-gutters">
+							  <div class="col-md-4">
+								<img src="./img/book-cover4.jpg" class="w-100">
+							  </div>
+							  <div class="col-md-8">
+								<div class="card-body">
+								  <h5 class="card-title">Card title</h5>
+								  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							  </div>
+							</div>
+						  </div> 
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+</html>
